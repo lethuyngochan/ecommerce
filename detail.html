@@ -6,12 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .breadcrumb a::before {
+            content: url(img/breadcrumb-arrow.svg);
+        }
+
+        .breadcrumb a:first-child::before {
+            content: none;
+        }
+
+        .grey-list li::marker {
+            color: #BDBDBD;
+        }
+    </style>
+    <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <form>
-        <input type="number" name="quantity" min="1" max="5">
-    </form>
+    <section class="flex-container container">
+        <!-- cot 1 -->
+        <div class="flex-container flex-direction-column w-20">
+            <img src="img/thumbnail1.jpg" alt="Thumbnail" class="thumbnail">
+            <img src="img/thumbnail2.jpg" alt="Thumbnail" class="thumbnail">
+            <img src="img/thumbnail3.jpg" alt="Thumbnail" class="thumbnail">
+            <img src="img/thumbnail-active.jpg" alt="Thumbnail active" class="thumbnail-active">
+        </div>
+        <!-- cot 2 -->
+        <img src="img/main-products.jpg" alt="Julia" class="w-40">
+        <!-- cot 3 -->
+        <div class="flex-container flex-wrap align-content-between w-40">
+            <!-- group 1 -->
+            <div class="w-100">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <a href="#">Jackets</a>
+                    <a href="#">Julia</a>
+                </div>
+                <form>
+                    <input type="number" name="quantity" min="1" max="5">
+                </form>
+            </div>
+            <!-- group 2 -->
+            <div>
+                <p>Share</p>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
+    <ul class="grey-list">
+        <li>Nylon, Metallic, Spandex</li>
+        <li>Imported</li>
+        <li>Dry Flat</li>
+    </ul>
+    <section>
+        <div class="flex-container container related-products flex-wrap">
+            <article>
+                <div class="pos-rel overflow-hidden">
+                    <img src="img/julia.jpg" alt="Julia" class="w-100">
+                    <button type="button" onclick="alert('Added to cart')" class="pos-absolute add-to-cart">Add to cart</button>
+                </div>
+                <p>Julia</p>
+                <p>€99.00 <span style="color: #828282;text-decoration: line-through;">€119.00</span></p>
+            </article>
+            <article>
+                <div class="pos-rel overflow-hidden">
+                    <img src="img/julia.jpg" alt="Julia" class="w-100">
+                    <button type="button" onclick="alert('Added to cart')" class="pos-absolute add-to-cart">Add to cart</button>
+                </div>
+                <p>Julia</p>
+                <p>€99.00 <span style="color: #828282;text-decoration: line-through;">€119.00</span></p>
+            </article>
+            <article>
+                <div class="pos-rel overflow-hidden">
+                    <img src="img/julia.jpg" alt="Julia" class="w-100">
+                    <button type="button" onclick="alert('Added to cart')" class="pos-absolute add-to-cart">Add to cart</button>
+                </div>
+                <p>Julia</p>
+                <p>€99.00 <span style="color: #828282;text-decoration: line-through;">€119.00</span></p>
+            </article>
+            <article>
+                <div class="pos-rel overflow-hidden">
+                    <img src="img/julia.jpg" alt="Julia" class="w-100">
+                    <button type="button" onclick="alert('Added to cart')" class="pos-absolute add-to-cart">Add to cart</button>
+                </div>
+                <p>Julia</p>
+                <p>€99.00 <span style="color: #828282;text-decoration: line-through;">€119.00</span></p>
+            </article>
+        </div>
+    </section>
 </body>
 
 </html>

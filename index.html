@@ -6,118 +6,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .cookie {
-            background-color: black;
-            color: white;
-        }
-
-        .footer {
-            background-color: #F2F2F2;
-        }
-
-        a {
-            color: black;
-        }
-
-        #instagram {
-            color: #9B51E0;
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        /* unvisited link */
-        a:link {
-            color: black;
-        }
-
-        /* visited link */
-        a:visited {
-            color: black;
-        }
-
-        /* mouse over link */
-        a:hover {
-            color: green;
-        }
-
-        /* selected link */
-        a:active {
-            color: purple;
-        }
-
-        .cart p {
-            display: none;
-        }
-
-        .cart:hover p {
-            display: block;
-        }
-    </style>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Nordic Coder</a>
-            <a href="#">New</a>
-            <a href="listing.html">Shop</a>
-            <a href="#">Sale</a>
-            <a href="login.html">Login</a>
-            <a href="#" class="cart">
-                <img src="img/cart.svg" alt="cart">
-                <p>No item yet</p>
-            </a>
+    <header class="home-banner">
+        <nav class="pos-fixed w-100">
+            <div class="flex-container justify-content-between container top-nav">
+                <a href="index.html" class="uppercase">Nordic Coder</a>
+                <ul>
+                    <li><a href="#">New</a></li>
+                    <li>
+                        <a href="listing.html">Shop</a>
+                        <ul>
+                            <li><a href="#">Tops</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Jeans</a></li>
+                            <li>
+                                <a href="#">Jackets</a>
+                                <ul class="submenu2">
+                                    <li><a href="#">Blazers</a></li>
+                                    <li><a href="#">Coats</a></li>
+                                    <li><a href="#">Denim Jackets</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li>
+                        <a href="#" class="cart">
+                            <img src="img/cart.svg" alt="cart">
+                            <!-- dung svg cho hinh vector cho net va nhe -->
+                            <p>No item yet</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <h1>Reven</h1>
-        <a href="listing.html">Shop Now <img src="img/arrow.svg"></a>
+        <h1 class="uppercase banner-title">Reven</h1>
+        <a href="listing.html" class="arrow-link">Shop Now</a>
     </header>
     <main>
-        <h2 class="center">Shop these outfit collections</h2>
-        <p class="center">100% Organic & Fairtrade certified cotton</p>
-        <form>
-            <input type="email" name="email">
-            <input type="submit" value="Register">
-        </form>
-        <p>50&euro;</p>
+        <section>
+            <p class="clearfix"><img src="img/amazing-design.jpg" alt="Amazing designs" class="float-right">Amazing
+                designs & collaborations, and as always
+                100% Organic & Fairtrade certified cotton. Inspired by the georgious Brasilian bucket, a wonderful
+                serenity has taken possession of my entire soul, like these sweet mornings of spring which.</p>
+        </section>
+        <section>
+            <h2 class="center">Shop these outfit collections</h2>
+            <p class="center">100% Organic & Fairtrade certified cotton</p>
+            <div class="darling flex-container justify-content-center align-items-center">
+                <p>Darling</p>
+            </div>
+            <div class="flex-container container">
+                <div class="reven flex-container justify-content-end align-items-end m-10">
+                    <p>Reven</p>
+                </div>
+                <div class="feminin flex-container align-items-center justify-content-end m-10">
+                    <p>Le Feminin</p>
+                </div>
+                <div class="naturalism flex-container justify-content-center align-items-end m-10">
+                    <p>Naturalism</p>
+                </div>
+            </div>
+            <div class="flex-container container">
+                <div class="flex-50">
+                    <p>Women’s Clothing and Accessories</p>
+                    <p>Searching for cute clothes? Shop Nordic Coder women’s clothes, accessories and women’s shoes
+                        right here. Updated daily with new arrivals of exclusive styles, favorite brands and trends.</p>
+                </div>
+                <div class="flex-50">
+                    <p>Shop For The Latest Clothes Online And Shoes Online.</p>
+                    <p>Nordic Coder delivers a stylish and current collection womens apparel, sourced from the most
+                        coveted Australian and international brands. With everything from dresses to jeans, ankle boots
+                        to sneakers, watches to wallets, our selection of over 20,000 products has something for every
+                        style.</p>
+                </div>
+            </div>
+        </section>
+        <section class="new-customer-section">
+            <div class="new-customer">
+                <div class="promo">
+                    <p>Receive instantly voucher valued at</p>
+                    <p>50&euro;</p>
+                    <p>and other attractive deals and latest trends</p>
+                </div>
+                <form>
+                    <input type="email" name="email">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </section>
         <a href="https://www.instagram.com/" id="instagram">@nordiccoder</a>
+        <div class="flex-container justify-content-center">
+            <img src="img/instagram1.jpg" alt="instagram1">
+            <img src="img/instagram2.jpg" alt="instagram2">
+            <img src="img/instagram3.jpg" alt="instagram3">
+            <img src="img/instagram4.jpg" alt="instagram4">
+            <img src="img/instagram5.jpg" alt="instagram5">
+        </div>
     </main>
     <div class="footer">
-        <p>About us</p>
-        <ul>
-            <li>Our company</li>
-            <li>Our history</li>
-            <li>Contact</li>
-            <li>Jobs</li>
-            <li>Journal</li>
-            <li>Store Locations</li>
-        </ul>
-        <p>About us</p>
-        <ul>
-            <li>Our company</li>
-            <li>Our history</li>
-            <li>Contact</li>
-            <li>Jobs</li>
-            <li>Journal</li>
-            <li>Store Locations</li>
-        </ul>
-        <p>About us</p>
-        <ul>
-            <li>Our company</li>
-            <li>Our history</li>
-            <li>Contact</li>
-            <li>Jobs</li>
-            <li>Journal</li>
-            <li>Store Locations</li>
-        </ul>
-        <p>Security system</p>
-        <ul>
-            <li>PCI security standards</li>
-            <li>Protect card owner</li>
-            <li>Encrypted network</li>
-        </ul>
+        <div class="flex-container container">
+            <div class="flex-25">
+                <p>About us</p>
+                <ul>
+                    <li>Our company</li>
+                    <li>Our history</li>
+                    <li>Contact</li>
+                    <li>Jobs</li>
+                    <li>Journal</li>
+                    <li>Store Locations</li>
+                </ul>
+            </div>
+            <div class="flex-25">
+                <p>About us</p>
+                <ul>
+                    <li>Our company</li>
+                    <li>Our history</li>
+                    <li>Contact</li>
+                    <li>Jobs</li>
+                    <li>Journal</li>
+                    <li>Store Locations</li>
+                </ul>
+            </div>
+            <div class="flex-25">
+                <p>About us</p>
+                <ul>
+                    <li>Our company</li>
+                    <li>Our history</li>
+                    <li>Contact</li>
+                    <li>Jobs</li>
+                    <li>Journal</li>
+                    <li>Store Locations</li>
+                </ul>
+            </div>
+            <div class="flex-25">
+                <p>Security system</p>
+                <ul class="security-system">
+                    <li>PCI security standards</li>
+                    <li>Protect card owner</li>
+                    <li>Encrypted network</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="cookie">
         <p>This is a standard cookie notice which you can easily adapt or disable as you like in the admin. We use

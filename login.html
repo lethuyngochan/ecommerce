@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .link-btn::after {
+            content: url(img/link-btn-arrow.svg);
+        }
+    </style>
 </head>
 
 <body>
+    <a href="register.html" class="link-btn">Create account</a>
     <form>
         <input type="password" name="pwd">
         <input type="checkbox" id="rmb" name="rmb" value="Remember me">

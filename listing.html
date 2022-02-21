@@ -6,20 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <button type="button">S</button>
-    <form>
-        <select id="sort" name="sort">
-            <option value="Sort by latest">Sort by latest</option>
-            <option value="Newest to Oldest">Newest to Oldest</option>
-            <option value="Highest to Lowest">Highest to Lowest</option>
-            <option value="Lowest to Highest">Lowest to Highest</option>
-        </select>
-    </form>
-    <button type="button" onclick="alert('Added to cart')">Add to cart</button>
-    <p>€99.00 <span style="color: #828282;">€119.00</span></p>
+    <button type="button" class="color black"></button>
+    <button type="button" class="color red"></button>
+    <button type="button" class="border-radius-50 transparent">S</button>
+    <div class="flex-container justify-content-between">
+        <p>Showing 1–12 of 24 results</p>
+        <form>
+            <select id="sort" name="sort">
+                <option value="Sort by latest">Sort by latest</option>
+                <option value="Newest to Oldest">Newest to Oldest</option>
+                <option value="Highest to Lowest">Highest to Lowest</option>
+                <option value="Lowest to Highest">Lowest to Highest</option>
+            </select>
+        </form>
+    </div>
+    <div class="flex-container flex-wrap main-products">
+        <article>
+            <img src="img/julia.jpg" alt="Julia">
+            <p>Julia</p>
+            <p>€99.00 <span style="color: #828282;text-decoration: line-through;">€119.00</span></p>
+        </article>
+        <article>
+            <img src="img/julia.jpg" alt="Julia">
+            <p>Julia</p>
+            <p>€99.00 <span style="color: #828282;text-decoration: line-through;">€119.00</span></p>
+        </article>
+        <article>
+            <img src="img/julia.jpg" alt="Julia">
+            <p>Julia</p>
+            <p>€99.00 <span style="color: #828282;text-decoration: line-through;">€119.00</span></p>
+        </article>
+        <article>
+            <img src="img/julia.jpg" alt="Julia">
+            <p>Julia</p>
+            <p>€99.00 <span style="color: #828282;text-decoration: line-through;">€119.00</span></p>
+        </article>
+        <article>
+            <img src="img/julia.jpg" alt="Julia">
+            <p>Julia</p>
+            <p>€99.00 <span style="color: #828282;text-decoration: line-through;">€119.00</span></p>
+        </article>
+        <article>
+            <div class="pos-rel overflow-hidden">
+                <img src="img/julia.jpg" alt="Julia">
+                <button type="button" onclick="alert('Added to cart')" class="pos-absolute add-to-cart">Add to cart</button>
+            </div>
+            <p>Julia</p>
+            <p>€99.00 <span style="color: #828282;text-decoration: line-through;">€119.00</span></p>
+        </article>
+    </div>
 </body>
 
 </html>
